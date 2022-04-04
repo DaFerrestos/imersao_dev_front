@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style_media.css">
+
+    <title>Imersao Dev Front-End : Aula 01 </title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="page-title">Calculadora de Média</h1>
+        <p class="page-subtitle">Vamos calcular a média de notas das provas!</p>
+        <img style="width: 13%;" src='https://cdn-icons-png.flaticon.com/512/1081/1081015.png' alt="">
+    </div>
+
+
+    <div class="container-body">
+
+        <div class="first-step">
+            <p>Clique aqui para começar:</p>
+            <button onclick="go(1, 2)">Iniciar</button>
+        </div>
+
+        <div class="second-step">
+            <h2>Sua média anual:</h2>
+            <hr>
+            <label for="">Primeiro Bimestre:</label>
+            <input type="number" placeholder="Primeira nota" id="n1">
+            <br><br>
+            <label for="">Segundo Bimestre:</label>
+            <input type="number" placeholder="Segunda nota" id="n2">
+            <br><br>
+            <label for="">Terceiro Bimestre:</label>
+            <input type="number" placeholder="Terceira nota" id="n3">
+            <br><br>
+            <label for="">Quarto Bimestre:</label>
+            <input type="number" placeholder="Quarta nota" id="n4">
+            <br><br>
+            <button onclick="CalcularMedia()">Calcular</button>
+
+        </div>
+
+        <div class="final-step">
+            <h3>Resultado:</h3>
+            <p id="result"></p>
+
+            <button onclick="go(3, 2)">Calcular Novamente</button>
+            <button onclick="go(3, 1)">Encerrar</button>
+
+        </div>
+
+        
+
+    </div>
+
+    <div>
+        <button class="btn-voltar">
+            <a href="/index.html">Voltar</a>
+        </button>
+    </div>
+
+    <footer>
+        <p>Feito com <img src="imgs/heart_footer.png" alt="ícone de coração vermelho"> por: <a href="https://github.com/DaFerrestos" target="_blank">
+            <img src="imgs/github_icon.png" alt="Icone do GitHub"></a>
+        </p>
+    </footer>
+
+
+
+</body>
+<script src="Scripts/script_media.js"></script>
+
+</html>
